@@ -8,13 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		F057B0FF23C8FCF500752048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B0FE23C8FCF500752048 /* AppDelegate.swift */; };
-		F057B10123C8FCF500752048 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B10023C8FCF500752048 /* SceneDelegate.swift */; };
 		F057B10323C8FCF500752048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B10223C8FCF500752048 /* ViewController.swift */; };
-		F057B10623C8FCF500752048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F057B10423C8FCF500752048 /* Main.storyboard */; };
 		F057B10823C8FCF600752048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F057B10723C8FCF600752048 /* Assets.xcassets */; };
 		F057B10B23C8FCF600752048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F057B10923C8FCF600752048 /* LaunchScreen.storyboard */; };
 		F057B11623C8FCF600752048 /* PlatounTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B11523C8FCF600752048 /* PlatounTests.swift */; };
 		F057B12123C8FCF600752048 /* PlatounUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B12023C8FCF600752048 /* PlatounUITests.swift */; };
+		F077688723C92B9400920A67 /* PriceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077688523C92B9400920A67 /* PriceButton.swift */; };
+		F077688823C92B9400920A67 /* PriceButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = F077688623C92B9400920A67 /* PriceButton.xib */; };
+		F077688B23C92BAA00920A67 /* ItemShop.xib in Resources */ = {isa = PBXBuildFile; fileRef = F077688923C92BAA00920A67 /* ItemShop.xib */; };
+		F077688C23C92BAA00920A67 /* ItemShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = F077688A23C92BAA00920A67 /* ItemShop.swift */; };
+		F07768A123C9342400920A67 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = F077689423C9342300920A67 /* LICENSE.txt */; };
+		F07768A223C9342400920A67 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689523C9342300920A67 /* Roboto-Black.ttf */; };
+		F07768A323C9342400920A67 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689623C9342300920A67 /* Roboto-MediumItalic.ttf */; };
+		F07768A423C9342400920A67 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689723C9342300920A67 /* Roboto-Light.ttf */; };
+		F07768A523C9342400920A67 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689823C9342300920A67 /* Roboto-LightItalic.ttf */; };
+		F07768A623C9342400920A67 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689923C9342300920A67 /* Roboto-Bold.ttf */; };
+		F07768A723C9342400920A67 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689A23C9342300920A67 /* Roboto-Medium.ttf */; };
+		F07768A823C9342400920A67 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689B23C9342300920A67 /* Roboto-BlackItalic.ttf */; };
+		F07768A923C9342400920A67 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689C23C9342400920A67 /* Roboto-Thin.ttf */; };
+		F07768AA23C9342400920A67 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689D23C9342400920A67 /* Roboto-Regular.ttf */; };
+		F07768AB23C9342400920A67 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689E23C9342400920A67 /* Roboto-ThinItalic.ttf */; };
+		F07768AC23C9342400920A67 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F077689F23C9342400920A67 /* Roboto-Italic.ttf */; };
+		F07768AD23C9342400920A67 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F07768A023C9342400920A67 /* Roboto-BoldItalic.ttf */; };
+		F07768AF23C940E000920A67 /* RateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768AE23C940E000920A67 /* RateView.swift */; };
+		F07768B123C9415E00920A67 /* RateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768B023C9415E00920A67 /* RateView.xib */; };
+		F07768B323C9484700920A67 /* LikeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768B223C9484700920A67 /* LikeButton.xib */; };
+		F07768B523C9486200920A67 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768B423C9486200920A67 /* LikeButton.swift */; };
+		F07768B823C9504100920A67 /* PourcentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768B723C9504100920A67 /* PourcentView.xib */; };
+		F07768BA23C9504A00920A67 /* PourcentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768B923C9504A00920A67 /* PourcentView.swift */; };
+		F07768BE23C9537500920A67 /* ContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768BD23C9537500920A67 /* ContentCell.xib */; };
+		F07768C023C9538800920A67 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768BF23C9538800920A67 /* ContentCell.swift */; };
+		F07768C223C9574E00920A67 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768C123C9574E00920A67 /* CategoryController.swift */; };
+		F07768C423C957EE00920A67 /* PlatounViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768C323C957EE00920A67 /* PlatounViewController.swift */; };
+		F07768C623C9581C00920A67 /* ContainerCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768C523C9581C00920A67 /* ContainerCategoryCell.swift */; };
+		F07768C923C9587000920A67 /* AutoLayoutExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768C823C9587000920A67 /* AutoLayoutExtension.swift */; };
+		F07768CB23C9588D00920A67 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768CA23C9588D00920A67 /* ColorExtension.swift */; };
+		F07768CD23C95D9C00920A67 /* HeaderCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */; };
+		F07768CF23C95ECC00920A67 /* HeaderCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */; };
+		F07768D223C966D800920A67 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768D123C966D800920A67 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +68,7 @@
 /* Begin PBXFileReference section */
 		F057B0FB23C8FCF500752048 /* Platoun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platoun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F057B0FE23C8FCF500752048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F057B10023C8FCF500752048 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F057B10223C8FCF500752048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F057B10523C8FCF500752048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F057B10723C8FCF600752048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F057B10A23C8FCF600752048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F057B10C23C8FCF600752048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +78,39 @@
 		F057B11C23C8FCF600752048 /* PlatounUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatounUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F057B12023C8FCF600752048 /* PlatounUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatounUITests.swift; sourceTree = "<group>"; };
 		F057B12223C8FCF600752048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F077688523C92B9400920A67 /* PriceButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceButton.swift; sourceTree = "<group>"; };
+		F077688623C92B9400920A67 /* PriceButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceButton.xib; sourceTree = "<group>"; };
+		F077688923C92BAA00920A67 /* ItemShop.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemShop.xib; sourceTree = "<group>"; };
+		F077688A23C92BAA00920A67 /* ItemShop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemShop.swift; sourceTree = "<group>"; };
+		F077689423C9342300920A67 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F077689523C9342300920A67 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		F077689623C9342300920A67 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F077689723C9342300920A67 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F077689823C9342300920A67 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		F077689923C9342300920A67 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		F077689A23C9342300920A67 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		F077689B23C9342300920A67 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F077689C23C9342400920A67 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		F077689D23C9342400920A67 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		F077689E23C9342400920A67 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F077689F23C9342400920A67 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		F07768A023C9342400920A67 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F07768AE23C940E000920A67 /* RateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateView.swift; sourceTree = "<group>"; };
+		F07768B023C9415E00920A67 /* RateView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RateView.xib; sourceTree = "<group>"; };
+		F07768B223C9484700920A67 /* LikeButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeButton.xib; sourceTree = "<group>"; };
+		F07768B423C9486200920A67 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		F07768B723C9504100920A67 /* PourcentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PourcentView.xib; sourceTree = "<group>"; };
+		F07768B923C9504A00920A67 /* PourcentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PourcentView.swift; sourceTree = "<group>"; };
+		F07768BD23C9537500920A67 /* ContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentCell.xib; sourceTree = "<group>"; };
+		F07768BF23C9538800920A67 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		F07768C123C9574E00920A67 /* CategoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		F07768C323C957EE00920A67 /* PlatounViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatounViewController.swift; sourceTree = "<group>"; };
+		F07768C523C9581C00920A67 /* ContainerCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerCategoryCell.swift; sourceTree = "<group>"; };
+		F07768C823C9587000920A67 /* AutoLayoutExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutExtension.swift; sourceTree = "<group>"; };
+		F07768CA23C9588D00920A67 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCategoryView.xib; sourceTree = "<group>"; };
+		F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCategoryView.swift; sourceTree = "<group>"; };
+		F07768D123C966D800920A67 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +161,12 @@
 		F057B0FD23C8FCF500752048 /* Platoun */ = {
 			isa = PBXGroup;
 			children = (
+				F07768D023C966AB00920A67 /* Data */,
+				F07768C723C9585B00920A67 /* Utils */,
+				F077688D23C933A000920A67 /* Ressources */,
+				F077687D23C92B3A00920A67 /* Page */,
 				F057B0FE23C8FCF500752048 /* AppDelegate.swift */,
-				F057B10023C8FCF500752048 /* SceneDelegate.swift */,
 				F057B10223C8FCF500752048 /* ViewController.swift */,
-				F057B10423C8FCF500752048 /* Main.storyboard */,
 				F057B10723C8FCF600752048 /* Assets.xcassets */,
 				F057B10923C8FCF600752048 /* LaunchScreen.storyboard */,
 				F057B10C23C8FCF600752048 /* Info.plist */,
@@ -126,6 +190,147 @@
 				F057B12223C8FCF600752048 /* Info.plist */,
 			);
 			path = PlatounUITests;
+			sourceTree = "<group>";
+		};
+		F077687D23C92B3A00920A67 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				F077687E23C92B4700920A67 /* Platoun */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		F077687E23C92B4700920A67 /* Platoun */ = {
+			isa = PBXGroup;
+			children = (
+				F07768BB23C9533600920A67 /* CategoryController */,
+				F077688023C92B5700920A67 /* View */,
+				F07768C323C957EE00920A67 /* PlatounViewController.swift */,
+				F07768C523C9581C00920A67 /* ContainerCategoryCell.swift */,
+				F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */,
+				F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */,
+			);
+			path = Platoun;
+			sourceTree = "<group>";
+		};
+		F077688023C92B5700920A67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F07768B623C9503000920A67 /* PourcentView */,
+				F077688423C92B7E00920A67 /* RateView */,
+				F077688323C92B7300920A67 /* PriceButton */,
+				F077688223C92B6700920A67 /* LikeButton */,
+				F077688123C92B5E00920A67 /* ItemShop */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F077688123C92B5E00920A67 /* ItemShop */ = {
+			isa = PBXGroup;
+			children = (
+				F077688A23C92BAA00920A67 /* ItemShop.swift */,
+				F077688923C92BAA00920A67 /* ItemShop.xib */,
+			);
+			path = ItemShop;
+			sourceTree = "<group>";
+		};
+		F077688223C92B6700920A67 /* LikeButton */ = {
+			isa = PBXGroup;
+			children = (
+				F07768B223C9484700920A67 /* LikeButton.xib */,
+				F07768B423C9486200920A67 /* LikeButton.swift */,
+			);
+			path = LikeButton;
+			sourceTree = "<group>";
+		};
+		F077688323C92B7300920A67 /* PriceButton */ = {
+			isa = PBXGroup;
+			children = (
+				F077688523C92B9400920A67 /* PriceButton.swift */,
+				F077688623C92B9400920A67 /* PriceButton.xib */,
+			);
+			path = PriceButton;
+			sourceTree = "<group>";
+		};
+		F077688423C92B7E00920A67 /* RateView */ = {
+			isa = PBXGroup;
+			children = (
+				F07768AE23C940E000920A67 /* RateView.swift */,
+				F07768B023C9415E00920A67 /* RateView.xib */,
+			);
+			path = RateView;
+			sourceTree = "<group>";
+		};
+		F077688D23C933A000920A67 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F077688E23C933A500920A67 /* fonts */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		F077688E23C933A500920A67 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F077689323C9341700920A67 /* Roboto */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		F077689323C9341700920A67 /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				F077689423C9342300920A67 /* LICENSE.txt */,
+				F077689523C9342300920A67 /* Roboto-Black.ttf */,
+				F077689B23C9342300920A67 /* Roboto-BlackItalic.ttf */,
+				F077689923C9342300920A67 /* Roboto-Bold.ttf */,
+				F07768A023C9342400920A67 /* Roboto-BoldItalic.ttf */,
+				F077689F23C9342400920A67 /* Roboto-Italic.ttf */,
+				F077689723C9342300920A67 /* Roboto-Light.ttf */,
+				F077689823C9342300920A67 /* Roboto-LightItalic.ttf */,
+				F077689A23C9342300920A67 /* Roboto-Medium.ttf */,
+				F077689623C9342300920A67 /* Roboto-MediumItalic.ttf */,
+				F077689D23C9342400920A67 /* Roboto-Regular.ttf */,
+				F077689C23C9342400920A67 /* Roboto-Thin.ttf */,
+				F077689E23C9342400920A67 /* Roboto-ThinItalic.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		F07768B623C9503000920A67 /* PourcentView */ = {
+			isa = PBXGroup;
+			children = (
+				F07768B723C9504100920A67 /* PourcentView.xib */,
+				F07768B923C9504A00920A67 /* PourcentView.swift */,
+			);
+			path = PourcentView;
+			sourceTree = "<group>";
+		};
+		F07768BB23C9533600920A67 /* CategoryController */ = {
+			isa = PBXGroup;
+			children = (
+				F07768BD23C9537500920A67 /* ContentCell.xib */,
+				F07768BF23C9538800920A67 /* ContentCell.swift */,
+				F07768C123C9574E00920A67 /* CategoryController.swift */,
+			);
+			path = CategoryController;
+			sourceTree = "<group>";
+		};
+		F07768C723C9585B00920A67 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F07768C823C9587000920A67 /* AutoLayoutExtension.swift */,
+				F07768CA23C9588D00920A67 /* ColorExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F07768D023C966AB00920A67 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F07768D123C966D800920A67 /* File.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +437,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07768A723C9342400920A67 /* Roboto-Medium.ttf in Resources */,
+				F07768AC23C9342400920A67 /* Roboto-Italic.ttf in Resources */,
 				F057B10B23C8FCF600752048 /* LaunchScreen.storyboard in Resources */,
+				F07768AA23C9342400920A67 /* Roboto-Regular.ttf in Resources */,
+				F07768B123C9415E00920A67 /* RateView.xib in Resources */,
+				F07768A523C9342400920A67 /* Roboto-LightItalic.ttf in Resources */,
+				F07768A823C9342400920A67 /* Roboto-BlackItalic.ttf in Resources */,
+				F07768A623C9342400920A67 /* Roboto-Bold.ttf in Resources */,
 				F057B10823C8FCF600752048 /* Assets.xcassets in Resources */,
-				F057B10623C8FCF500752048 /* Main.storyboard in Resources */,
+				F07768A423C9342400920A67 /* Roboto-Light.ttf in Resources */,
+				F07768B823C9504100920A67 /* PourcentView.xib in Resources */,
+				F07768CD23C95D9C00920A67 /* HeaderCategoryView.xib in Resources */,
+				F07768BE23C9537500920A67 /* ContentCell.xib in Resources */,
+				F07768A923C9342400920A67 /* Roboto-Thin.ttf in Resources */,
+				F07768B323C9484700920A67 /* LikeButton.xib in Resources */,
+				F07768AB23C9342400920A67 /* Roboto-ThinItalic.ttf in Resources */,
+				F07768AD23C9342400920A67 /* Roboto-BoldItalic.ttf in Resources */,
+				F07768A223C9342400920A67 /* Roboto-Black.ttf in Resources */,
+				F077688B23C92BAA00920A67 /* ItemShop.xib in Resources */,
+				F077688823C92B9400920A67 /* PriceButton.xib in Resources */,
+				F07768A323C9342400920A67 /* Roboto-MediumItalic.ttf in Resources */,
+				F07768A123C9342400920A67 /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +483,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F07768BA23C9504A00920A67 /* PourcentView.swift in Sources */,
+				F07768C223C9574E00920A67 /* CategoryController.swift in Sources */,
 				F057B10323C8FCF500752048 /* ViewController.swift in Sources */,
+				F07768C623C9581C00920A67 /* ContainerCategoryCell.swift in Sources */,
 				F057B0FF23C8FCF500752048 /* AppDelegate.swift in Sources */,
-				F057B10123C8FCF500752048 /* SceneDelegate.swift in Sources */,
+				F07768CB23C9588D00920A67 /* ColorExtension.swift in Sources */,
+				F07768AF23C940E000920A67 /* RateView.swift in Sources */,
+				F077688C23C92BAA00920A67 /* ItemShop.swift in Sources */,
+				F07768C423C957EE00920A67 /* PlatounViewController.swift in Sources */,
+				F077688723C92B9400920A67 /* PriceButton.swift in Sources */,
+				F07768D223C966D800920A67 /* File.swift in Sources */,
+				F07768B523C9486200920A67 /* LikeButton.swift in Sources */,
+				F07768C923C9587000920A67 /* AutoLayoutExtension.swift in Sources */,
+				F07768C023C9538800920A67 /* ContentCell.swift in Sources */,
+				F07768CF23C95ECC00920A67 /* HeaderCategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +533,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F057B10423C8FCF500752048 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F057B10523C8FCF500752048 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F057B10923C8FCF600752048 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

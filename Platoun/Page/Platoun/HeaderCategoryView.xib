@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderCategoryView" customModule="Platoun" customModuleProvider="target">
+            <connections>
+                <outlet property="icon" destination="gpR-Ce-8YQ" id="cpb-pA-5iw"/>
+                <outlet property="titleLabel" destination="yv3-PF-uqQ" id="ehi-xw-eiu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yP1-ON-Kul">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Av9-wc-CZE">
+                    <rect key="frame" x="0.0" y="65" width="414" height="25"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-header-1" translatesAutoresizingMaskIntoConstraints="NO" id="gpR-Ce-8YQ">
+                    <rect key="frame" x="25" y="40" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="cQa-zE-miI"/>
+                        <constraint firstAttribute="width" secondItem="gpR-Ce-8YQ" secondAttribute="height" multiplier="1:1" id="ugb-yH-Bz0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stroller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-PF-uqQ">
+                    <rect key="frame" x="85" y="53" width="67" height="24"/>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cr-2h-cha">
+                    <rect key="frame" x="344" y="47" width="60" height="36"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                    <state key="normal" title="See all">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="seeAllClick:" destination="-1" eventType="touchUpInside" id="Vjn-Et-oEb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Av9-wc-CZE" firstAttribute="leading" secondItem="yP1-ON-Kul" secondAttribute="leading" id="2bN-iL-HyH"/>
+                <constraint firstItem="6cr-2h-cha" firstAttribute="centerY" secondItem="gpR-Ce-8YQ" secondAttribute="centerY" id="8XT-tE-hQc"/>
+                <constraint firstItem="Av9-wc-CZE" firstAttribute="top" secondItem="gpR-Ce-8YQ" secondAttribute="top" constant="25" id="9az-Xk-GqY"/>
+                <constraint firstItem="yv3-PF-uqQ" firstAttribute="leading" secondItem="gpR-Ce-8YQ" secondAttribute="trailing" constant="10" id="A5S-JU-hZw"/>
+                <constraint firstAttribute="bottom" secondItem="Av9-wc-CZE" secondAttribute="bottom" id="NAs-Af-7uv"/>
+                <constraint firstItem="gpR-Ce-8YQ" firstAttribute="leading" secondItem="yP1-ON-Kul" secondAttribute="leading" constant="25" id="Ojr-8t-t3h"/>
+                <constraint firstAttribute="trailing" secondItem="6cr-2h-cha" secondAttribute="trailing" constant="10" id="bOc-rS-cXs"/>
+                <constraint firstItem="yv3-PF-uqQ" firstAttribute="centerY" secondItem="gpR-Ce-8YQ" secondAttribute="centerY" id="cTP-9E-Toy"/>
+                <constraint firstAttribute="trailing" secondItem="Av9-wc-CZE" secondAttribute="trailing" id="wFC-Dg-w9o"/>
+                <constraint firstAttribute="bottom" secondItem="gpR-Ce-8YQ" secondAttribute="bottom" id="yJh-Ve-Bab"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-117.39130434782609" y="-20.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic-header-1" width="50" height="50"/>
+    </resources>
+</document>
