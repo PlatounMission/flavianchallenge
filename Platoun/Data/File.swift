@@ -48,14 +48,14 @@ var data:[Category: [Product]] = [
     ]
 ]
 
-let categoriesFiltred: [Category] = []
+var categoriesFiltred: [Category] = []
 
 
 
-enum Category: String {
+enum Category: Int {
+    case stroller
     case food
     case toys
-    case stroller
     case clothings
     case forMoms
     case furniture

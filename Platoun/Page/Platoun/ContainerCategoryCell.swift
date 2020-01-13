@@ -16,6 +16,12 @@ class ContainerCategoryCell: UITableViewCell {
         return header
     }()
     
+    let footer: UIView = {
+            let footer = UIView()
+            footer.backgroundColor = UIColor.rgb(red: 249, green: 249, blue: 249)
+            return footer
+        }()
+    
     weak var containerController: PlatounViewController? {
         didSet {
             setupChildViews()
@@ -34,6 +40,9 @@ class ContainerCategoryCell: UITableViewCell {
         
         addSubview(header)
         header.anchor(top: topAnchor, paddingTop: 0, bottom: nil, paddingBottom: 0, left: leftAnchor, paddingLeft: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 90)
+        
+        addSubview(footer)
+        footer.anchor(top: nil, paddingTop: 0, bottom: bottomAnchor, paddingBottom: 0, left: leftAnchor, paddingLeft: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 35)
     }
     
     fileprivate func setupChildViews() {
@@ -46,7 +55,7 @@ class ContainerCategoryCell: UITableViewCell {
         addSubview(contentCollection.view)
         contentCollection.didMove(toParent: containerController)
         
-        contentCollection.view.anchor(top: header.bottomAnchor, paddingTop: 0, bottom: bottomAnchor, paddingBottom: 0, left: leftAnchor, paddingLeft: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 0)
+        contentCollection.view.anchor(top: header.bottomAnchor, paddingTop: 0, bottom: nil, paddingBottom: 0, left: leftAnchor, paddingLeft: 0, right: rightAnchor, paddingRight: 0, width: 0, height: 300)
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F057B0FF23C8FCF500752048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B0FE23C8FCF500752048 /* AppDelegate.swift */; };
-		F057B10323C8FCF500752048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B10223C8FCF500752048 /* ViewController.swift */; };
 		F057B10823C8FCF600752048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F057B10723C8FCF600752048 /* Assets.xcassets */; };
 		F057B10B23C8FCF600752048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F057B10923C8FCF600752048 /* LaunchScreen.storyboard */; };
 		F057B11623C8FCF600752048 /* PlatounTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B11523C8FCF600752048 /* PlatounTests.swift */; };
@@ -46,6 +45,9 @@
 		F07768CD23C95D9C00920A67 /* HeaderCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */; };
 		F07768CF23C95ECC00920A67 /* HeaderCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */; };
 		F07768D223C966D800920A67 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768D123C966D800920A67 /* File.swift */; };
+		F0AEFD0E23CB723600BE2F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AEFD0D23CB723600BE2F4D /* Main.storyboard */; };
+		F0AEFD1123CB951000BE2F4D /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AEFD1023CB951000BE2F4D /* BorderedView.swift */; };
+		F0AEFD1423CBA67100BE2F4D /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AEFD1323CBA67100BE2F4D /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +70,6 @@
 /* Begin PBXFileReference section */
 		F057B0FB23C8FCF500752048 /* Platoun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platoun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F057B0FE23C8FCF500752048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F057B10223C8FCF500752048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F057B10723C8FCF600752048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F057B10A23C8FCF600752048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F057B10C23C8FCF600752048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +112,9 @@
 		F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCategoryView.xib; sourceTree = "<group>"; };
 		F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCategoryView.swift; sourceTree = "<group>"; };
 		F07768D123C966D800920A67 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F0AEFD0D23CB723600BE2F4D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F0AEFD1023CB951000BE2F4D /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
+		F0AEFD1323CBA67100BE2F4D /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +165,12 @@
 		F057B0FD23C8FCF500752048 /* Platoun */ = {
 			isa = PBXGroup;
 			children = (
+				F0AEFD0F23CB94D500BE2F4D /* View */,
 				F07768D023C966AB00920A67 /* Data */,
 				F07768C723C9585B00920A67 /* Utils */,
 				F077688D23C933A000920A67 /* Ressources */,
 				F077687D23C92B3A00920A67 /* Page */,
 				F057B0FE23C8FCF500752048 /* AppDelegate.swift */,
-				F057B10223C8FCF500752048 /* ViewController.swift */,
 				F057B10723C8FCF600752048 /* Assets.xcassets */,
 				F057B10923C8FCF600752048 /* LaunchScreen.storyboard */,
 				F057B10C23C8FCF600752048 /* Info.plist */,
@@ -195,7 +199,9 @@
 		F077687D23C92B3A00920A67 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				F0AEFD0D23CB723600BE2F4D /* Main.storyboard */,
 				F077687E23C92B4700920A67 /* Platoun */,
+				F0AEFD1223CBA65500BE2F4D /* Filter */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -333,6 +339,22 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		F0AEFD0F23CB94D500BE2F4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F0AEFD1023CB951000BE2F4D /* BorderedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0AEFD1223CBA65500BE2F4D /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				F0AEFD1323CBA67100BE2F4D /* FilterViewController.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -451,6 +473,7 @@
 				F07768CD23C95D9C00920A67 /* HeaderCategoryView.xib in Resources */,
 				F07768BE23C9537500920A67 /* ContentCell.xib in Resources */,
 				F07768A923C9342400920A67 /* Roboto-Thin.ttf in Resources */,
+				F0AEFD0E23CB723600BE2F4D /* Main.storyboard in Resources */,
 				F07768B323C9484700920A67 /* LikeButton.xib in Resources */,
 				F07768AB23C9342400920A67 /* Roboto-ThinItalic.ttf in Resources */,
 				F07768AD23C9342400920A67 /* Roboto-BoldItalic.ttf in Resources */,
@@ -484,8 +507,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F07768BA23C9504A00920A67 /* PourcentView.swift in Sources */,
+				F0AEFD1123CB951000BE2F4D /* BorderedView.swift in Sources */,
 				F07768C223C9574E00920A67 /* CategoryController.swift in Sources */,
-				F057B10323C8FCF500752048 /* ViewController.swift in Sources */,
 				F07768C623C9581C00920A67 /* ContainerCategoryCell.swift in Sources */,
 				F057B0FF23C8FCF500752048 /* AppDelegate.swift in Sources */,
 				F07768CB23C9588D00920A67 /* ColorExtension.swift in Sources */,
@@ -493,6 +516,7 @@
 				F077688C23C92BAA00920A67 /* ItemShop.swift in Sources */,
 				F07768C423C957EE00920A67 /* PlatounViewController.swift in Sources */,
 				F077688723C92B9400920A67 /* PriceButton.swift in Sources */,
+				F0AEFD1423CBA67100BE2F4D /* FilterViewController.swift in Sources */,
 				F07768D223C966D800920A67 /* File.swift in Sources */,
 				F07768B523C9486200920A67 /* LikeButton.swift in Sources */,
 				F07768C923C9587000920A67 /* AutoLayoutExtension.swift in Sources */,
