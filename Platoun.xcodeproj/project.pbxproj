@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F036254A23CD39500064B8C7 /* Drawer.xib in Resources */ = {isa = PBXBuildFile; fileRef = F036254923CD39500064B8C7 /* Drawer.xib */; };
+		F036254C23CD39620064B8C7 /* Drawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036254B23CD39620064B8C7 /* Drawer.swift */; };
 		F057B0FF23C8FCF500752048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057B0FE23C8FCF500752048 /* AppDelegate.swift */; };
 		F057B10823C8FCF600752048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F057B10723C8FCF600752048 /* Assets.xcassets */; };
 		F057B10B23C8FCF600752048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F057B10923C8FCF600752048 /* LaunchScreen.storyboard */; };
@@ -45,6 +47,7 @@
 		F07768CD23C95D9C00920A67 /* HeaderCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */; };
 		F07768CF23C95ECC00920A67 /* HeaderCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */; };
 		F07768D223C966D800920A67 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07768D123C966D800920A67 /* File.swift */; };
+		F0ABC06723CD42CC0025B9C8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ABC06623CD42CC0025B9C8 /* CustomTabBar.swift */; };
 		F0AEFD0E23CB723600BE2F4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0AEFD0D23CB723600BE2F4D /* Main.storyboard */; };
 		F0AEFD1123CB951000BE2F4D /* BorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AEFD1023CB951000BE2F4D /* BorderedView.swift */; };
 		F0AEFD1423CBA67100BE2F4D /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AEFD1323CBA67100BE2F4D /* FilterViewController.swift */; };
@@ -68,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F036254923CD39500064B8C7 /* Drawer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Drawer.xib; sourceTree = "<group>"; };
+		F036254B23CD39620064B8C7 /* Drawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawer.swift; sourceTree = "<group>"; };
 		F057B0FB23C8FCF500752048 /* Platoun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Platoun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F057B0FE23C8FCF500752048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F057B10723C8FCF600752048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -112,6 +117,7 @@
 		F07768CC23C95D9C00920A67 /* HeaderCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCategoryView.xib; sourceTree = "<group>"; };
 		F07768CE23C95ECC00920A67 /* HeaderCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCategoryView.swift; sourceTree = "<group>"; };
 		F07768D123C966D800920A67 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F0ABC06623CD42CC0025B9C8 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		F0AEFD0D23CB723600BE2F4D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F0AEFD1023CB951000BE2F4D /* BorderedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedView.swift; sourceTree = "<group>"; };
 		F0AEFD1323CBA67100BE2F4D /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +148,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F036254823CD39290064B8C7 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				F036254923CD39500064B8C7 /* Drawer.xib */,
+				F036254B23CD39620064B8C7 /* Drawer.swift */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
 		F057B0F223C8FCF500752048 = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +217,7 @@
 				F0AEFD0D23CB723600BE2F4D /* Main.storyboard */,
 				F077687E23C92B4700920A67 /* Platoun */,
 				F0AEFD1223CBA65500BE2F4D /* Filter */,
+				F0ABC06623CD42CC0025B9C8 /* CustomTabBar.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -209,6 +225,7 @@
 		F077687E23C92B4700920A67 /* Platoun */ = {
 			isa = PBXGroup;
 			children = (
+				F036254823CD39290064B8C7 /* Drawer */,
 				F07768BB23C9533600920A67 /* CategoryController */,
 				F077688023C92B5700920A67 /* View */,
 				F07768C323C957EE00920A67 /* PlatounViewController.swift */,
@@ -475,6 +492,7 @@
 				F07768A923C9342400920A67 /* Roboto-Thin.ttf in Resources */,
 				F0AEFD0E23CB723600BE2F4D /* Main.storyboard in Resources */,
 				F07768B323C9484700920A67 /* LikeButton.xib in Resources */,
+				F036254A23CD39500064B8C7 /* Drawer.xib in Resources */,
 				F07768AB23C9342400920A67 /* Roboto-ThinItalic.ttf in Resources */,
 				F07768AD23C9342400920A67 /* Roboto-BoldItalic.ttf in Resources */,
 				F07768A223C9342400920A67 /* Roboto-Black.ttf in Resources */,
@@ -510,6 +528,7 @@
 				F0AEFD1123CB951000BE2F4D /* BorderedView.swift in Sources */,
 				F07768C223C9574E00920A67 /* CategoryController.swift in Sources */,
 				F07768C623C9581C00920A67 /* ContainerCategoryCell.swift in Sources */,
+				F0ABC06723CD42CC0025B9C8 /* CustomTabBar.swift in Sources */,
 				F057B0FF23C8FCF500752048 /* AppDelegate.swift in Sources */,
 				F07768CB23C9588D00920A67 /* ColorExtension.swift in Sources */,
 				F07768AF23C940E000920A67 /* RateView.swift in Sources */,
@@ -522,6 +541,7 @@
 				F07768C923C9587000920A67 /* AutoLayoutExtension.swift in Sources */,
 				F07768C023C9538800920A67 /* ContentCell.swift in Sources */,
 				F07768CF23C95ECC00920A67 /* HeaderCategoryView.swift in Sources */,
+				F036254C23CD39620064B8C7 /* Drawer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

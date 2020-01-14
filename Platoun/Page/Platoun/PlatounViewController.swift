@@ -13,6 +13,8 @@ class PlatounViewController: HavaViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var filterByView: UIView!
     
+    var customTabBar: CustomTabBar?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 //        self.navigationController?.navigationBar.tintColor = UIColor.rgb(red: 117, green: 117, blue: 177)
@@ -27,13 +29,16 @@ class PlatounViewController: HavaViewController {
             target: self,
             action: #selector(clicBurger))
         
-        self.filterByView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(clicFilteBy)))
-        
+        self.filterByView
+            .addGestureRecognizer(
+                UITapGestureRecognizer(
+                    target: self, action: #selector(clicFilteBy)))
+        customTabBar = self.tabBarController as? CustomTabBar
         setupTableView()
     }
-    
-    @objc func clicBurger() {
         
+    @objc func clicBurger() {
+        customTabBar?.openDrawer()
     }
     
     @objc func clicFilteBy() {
@@ -69,6 +74,7 @@ extension PlatounViewController: UITableViewDelegate, UITableViewDataSource {
             .sorted(by: { $0.rawValue < $1.rawValue })
         cell.category = categories[indexPath.row]
         cell.containerController = self
+        cell.delegate = self
         return cell
     }
     
@@ -77,10 +83,77 @@ extension PlatounViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+extension PlatounViewController: ContainerCategoryCellDelegate {
+    func seeAllClick(category: Category) {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .white
+        let label = UILabel()
+        label.text = "Product list for \(category.title)"
+        vc.view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: vc.view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: vc.view.centerYAnchor)
+        ])
+        self.present(vc, animated: true)
+    }
+    
+    func onClicSoloPrice(category: Category, product: Product) {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .white
+        let label = UILabel()
+        label.text = "\(product.title) - solo price => \(product.price)$"
+        vc.view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: vc.view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: vc.view.centerYAnchor)
+        ])
+        self.present(vc, animated: true)
+    }
+    
+    func onClicGroupPrice(category: Category, product: Product) {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .white
+        let label = UILabel()
+        label.text = "\(product.title) - group price => \(product.groupPrice)$"
+        vc.view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: vc.view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: vc.view.centerYAnchor)
+        ])
+        self.present(vc, animated: true)
+    }
+}
+
 extension PlatounViewController: FilterViewControllerDelegate {
     func update() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
+    }
+}
+
+extension UIViewController {
+
+    func presentDetail(_ viewControllerToPresent: UIViewController) {
+        let transition = CATransition()
+        transition.duration = 0.25
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromRight
+        self.view.window!.layer.add(transition, forKey: kCATransition)
+
+        present(viewControllerToPresent, animated: false)
+    }
+
+    func dismissDetail() {
+        let transition = CATransition()
+        transition.duration = 0.25
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromLeft
+        self.view.window!.layer.add(transition, forKey: kCATransition)
+
+        dismiss(animated: false)
     }
 }

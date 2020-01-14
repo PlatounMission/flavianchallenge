@@ -643,10 +643,10 @@
             </objects>
             <point key="canvasLocation" x="-2722" y="471"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar-->
         <scene sceneID="T3G-tk-Jjn">
             <objects>
-                <tabBarController id="xxd-QL-77I" sceneMemberID="viewController">
+                <tabBarController id="xxd-QL-77I" customClass="CustomTabBar" customModule="Platoun" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VzL-xr-p2R">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

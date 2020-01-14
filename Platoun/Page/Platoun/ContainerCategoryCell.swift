@@ -8,10 +8,17 @@
 
 import UIKit
 
+protocol ContainerCategoryCellDelegate {
+    func seeAllClick(category: Category)
+    func onClicSoloPrice(category: Category, product: Product)
+    func onClicGroupPrice(category: Category, product: Product)
+}
+
 class ContainerCategoryCell: UITableViewCell {
-    let header: HeaderCategoryView = {
+    var delegate: ContainerCategoryCellDelegate?
+    lazy var header: HeaderCategoryView = {
         let header = HeaderCategoryView()
-//        header.delegate = self
+        header.delegate = self
         header.title = "Stroller"
         return header
     }()
@@ -49,6 +56,7 @@ class ContainerCategoryCell: UITableViewCell {
         guard let containerController = containerController else { return }
         let flowlayout = UICollectionViewFlowLayout()
         let contentCollection = CategoryController(collectionViewLayout: flowlayout, type: self.category)
+        contentCollection.delegate = self
         flowlayout.scrollDirection = .horizontal
         
         containerController.addChild(contentCollection)
@@ -63,3 +71,18 @@ class ContainerCategoryCell: UITableViewCell {
     }
 }
 
+extension ContainerCategoryCell: HeaderCategoryViewDelegate {
+    func seeAllClick() {
+        self.delegate?.seeAllClick(category: self.category)
+    }
+}
+
+extension ContainerCategoryCell: CategoryControllerDelegate {
+    func onClicSoloPrice(category: Category, product: Product) {
+        self.delegate?.onClicSoloPrice(category: category, product: product)
+    }
+    
+    func onClicGroupPrice(category: Category, product: Product) {
+        self.delegate?.onClicGroupPrice(category: category, product: product)
+    }
+}
