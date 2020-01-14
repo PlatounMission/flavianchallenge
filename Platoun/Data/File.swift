@@ -110,4 +110,11 @@ struct Product {
     let price: Int
     let prct: Int
     var isLike: Bool
+    
+    
+    var groupPrice: Int {
+        get {
+            Int(Double(self.price) * Double(1-Double(self.prct) / 100))
+        }
+    }
 }

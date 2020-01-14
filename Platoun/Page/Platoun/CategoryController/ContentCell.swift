@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol ContentCellDelegate {
+    func onClicSoloPrice(category: Category, product: Product)
+    func onClicGroupPrice(category: Category, product: Product)
+}
+
 class ContentCell: UICollectionViewCell {
     @IBOutlet weak var itemShop: ItemShop!
     
     var index: Int!
     var category: Category!
+    var delegate: ContentCellDelegate?
     
     func setup(index: Int, category: Category) {
         self.index = index
@@ -26,7 +32,7 @@ class ContentCell: UICollectionViewCell {
         itemShop.rateView.rateNumber = product.nbRate
         itemShop.likeButton.isSelected = product.isLike
         itemShop.soloPrice.price = product.price
-        itemShop.groupPrice.price = Int(Double(product.price) * Double(1-Double(product.prct) / 100))
+        itemShop.groupPrice.price = product.groupPrice
         itemShop.pourcentView.prct = product.prct
         itemShop.delegate = self
     }
@@ -34,7 +40,15 @@ class ContentCell: UICollectionViewCell {
     
 }
 extension ContentCell: ItemShopDelegate {
-    func onClick() {
+    func clicGroupPrice() {
+        self.delegate?.onClicGroupPrice(category: category, product: data[category]![index])
+    }
+    
+    func clicSoloPrice() {
+        self.delegate?.onClicSoloPrice(category: category, product: data[category]![index])
+    }
+    
+    func onClic() {
         var p = data[category]![index]
         p.isLike = !p.isLike
         data[category]![index] = p

@@ -9,7 +9,9 @@
 import UIKit
 
 protocol ItemShopDelegate {
-    func onClick()
+    func onClic()
+    func clicSoloPrice()
+    func clicGroupPrice()
 }
 
 @IBDesignable
@@ -49,11 +51,23 @@ class ItemShop: UIView {
         addSubview(view)
         self.view = view
         
-        self.containerLikeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClick)))
+        self.containerLikeButton.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClic)))
+        
+        
+        self.soloPrice.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClicSoloPrice)))
+        self.groupPrice.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(onClicGroupPrice)))
     }
     
-    @objc func onClick() {
+    @objc func onClicSoloPrice() {
+        self.delegate?.clicSoloPrice()
+    }
+    
+    @objc func onClicGroupPrice() {
+        self.delegate?.clicGroupPrice()
+    }
+    
+    @objc func onClic() {
         self.likeButton.toggle()
-        self.delegate?.onClick()
+        self.delegate?.onClic()
     }
 }
